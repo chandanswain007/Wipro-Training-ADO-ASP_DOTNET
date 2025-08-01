@@ -1,0 +1,14 @@
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\bin\Debug\net8.0\DemoTesting using Nunit.exe
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\bin\Debug\net8.0\DemoTesting using Nunit.deps.json
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\bin\Debug\net8.0\DemoTesting using Nunit.runtimeconfig.json
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\bin\Debug\net8.0\DemoTesting using Nunit.dll
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\bin\Debug\net8.0\DemoTesting using Nunit.pdb
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.AssemblyInfoInputs.cache
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.AssemblyInfo.cs
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.csproj.CoreCompileInputs.cache
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.dll
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\refint\DemoTesting using Nunit.dll
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.pdb
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\DemoTesting using Nunit.genruntimeconfig.cache
+C:\Users\swain\Documents\C# Advanced\DemoTesting using Nunit\DemoTesting using Nunit\obj\Debug\net8.0\ref\DemoTesting using Nunit.dll

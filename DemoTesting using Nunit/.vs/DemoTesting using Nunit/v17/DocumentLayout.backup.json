@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{217685E7-B71A-4A61-9EF9-5A68E59D3F9F}|MathLibrary.Tests\\MathLibrary.Tests.csproj|c:\\users\\swain\\documents\\c# advanced\\demotesting using nunit\\mathlibrary.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{217685E7-B71A-4A61-9EF9-5A68E59D3F9F}|MathLibrary.Tests\\MathLibrary.Tests.csproj|solutionrelative:mathlibrary.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78328C3-8216-4407-910D-9327E7278FB0}|DemoTesting using Nunit\\DemoTesting using Nunit.csproj|c:\\users\\swain\\documents\\c# advanced\\demotesting using nunit\\demotesting using nunit\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E78328C3-8216-4407-910D-9327E7278FB0}|DemoTesting using Nunit\\DemoTesting using Nunit.csproj|solutionrelative:demotesting using nunit\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78328C3-8216-4407-910D-9327E7278FB0}|DemoTesting using Nunit\\DemoTesting using Nunit.csproj|c:\\users\\swain\\documents\\c# advanced\\demotesting using nunit\\demotesting using nunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E78328C3-8216-4407-910D-9327E7278FB0}|DemoTesting using Nunit\\DemoTesting using Nunit.csproj|solutionrelative:demotesting using nunit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\MathLibrary.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MathLibrary.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\MathLibrary.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "MathLibrary.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:11:20.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\DemoTesting using Nunit\\Calculator.cs",
+              "RelativeDocumentMoniker": "DemoTesting using Nunit\\Calculator.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\DemoTesting using Nunit\\Calculator.cs",
+              "RelativeToolTip": "DemoTesting using Nunit\\Calculator.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:04:52.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\DemoTesting using Nunit\\Program.cs",
+              "RelativeDocumentMoniker": "DemoTesting using Nunit\\Program.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\DemoTesting using Nunit\\DemoTesting using Nunit\\Program.cs",
+              "RelativeToolTip": "DemoTesting using Nunit\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T09:01:08.803Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

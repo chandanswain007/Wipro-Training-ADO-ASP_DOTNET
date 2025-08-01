@@ -1,0 +1,7 @@
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\obj\Debug\Demo_Calculator_app.csproj.AssemblyReference.cache
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\obj\Debug\Demo_Calculator_app.csproj.CoreCompileInputs.cache
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\bin\Debug\Demo_Calculator_app.exe.config
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\bin\Debug\Demo_Calculator_app.exe
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\bin\Debug\Demo_Calculator_app.pdb
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\obj\Debug\Demo_Calculator_app.exe
+C:\Users\swain\Documents\C# Advanced\Demo_Calculator_app\Demo_Calculator_app\obj\Debug\Demo_Calculator_app.pdb

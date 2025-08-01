@@ -1,0 +1,7 @@
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\bin\Debug\Practice_assignment1.exe.config
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\bin\Debug\Practice_assignment1.exe
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\bin\Debug\Practice_assignment1.pdb
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\obj\Debug\Practice_assignment1.csproj.AssemblyReference.cache
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\obj\Debug\Practice_assignment1.csproj.CoreCompileInputs.cache
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\obj\Debug\Practice_assignment1.exe
+C:\Users\swain\Documents\C# Advanced\Practice_assignment1\Practice_assignment1\obj\Debug\Practice_assignment1.pdb

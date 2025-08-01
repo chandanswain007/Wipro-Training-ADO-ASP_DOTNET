@@ -1,0 +1,14 @@
+﻿@model MVC.Models.Patient
+<form action="Delete" method="post">
+    <div>
+        @Html.HiddenFor(e => e.Id)
+        <label>@Html.DisplayNameFor(e => e.Name)</label>
+        @Html.DisplayFor(e => e.Name)
+    </div>
+    <div>
+        <label>@Html.DisplayNameFor(e => e.Allergies)</label>
+        <p>@Html.DisplayFor(e => e.Allergies)</p>
+    </div>
+    <div><p>Are you sure? The data will be deleted</p></div>
+    <div><input type="submit" class="btn btn-danger" /></div>
+</form>

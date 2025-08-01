@@ -10,6 +10,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+var connectionString1 = builder.Configuration.GetConnectionString("OrgConnection")
+    ?? throw new InvalidOperationException("Connection string 'OrgConnection' not found."); // <-- Corrected message
+
+builder.Services.AddDbContext<OrgContext>(options =>
+    options.UseSqlServer(connectionString1));
+
+
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>() // Add roles support
     .AddEntityFrameworkStores<ApplicationDbContext>();

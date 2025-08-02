@@ -64,24 +64,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Department/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
+[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Departments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Department/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFxEZWxldGUuY3NodG1s
+[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Departments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Department/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Departments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Department/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFxFZGl0LmNzaHRtbA==
+[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Departments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Department/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+[C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Departments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/swain/Documents/C\# Advanced/CoreRazorApp/CoreRazorApp/Pages/Employees/Create.cshtml]

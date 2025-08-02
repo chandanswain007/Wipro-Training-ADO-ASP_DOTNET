@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoreRazorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+309537be8cff5347e03eeb429b60610dba2ed84a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+798d9cfc0c3599dce32a7f72c58d94010abda005")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoreRazorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoreRazorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

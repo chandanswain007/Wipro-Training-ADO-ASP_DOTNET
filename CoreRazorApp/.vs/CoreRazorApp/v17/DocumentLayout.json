@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|c:\\users\\swain\\documents\\c# advanced\\corerazorapp\\mvc\\wwwroot\\welcome.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|solutionrelative:mvc\\wwwroot\\welcome.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|c:\\users\\swain\\documents\\c# advanced\\corerazorapp\\mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|solutionrelative:mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|c:\\users\\swain\\documents\\c# advanced\\corerazorapp\\mvc\\models\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|c:\\users\\swain\\documents\\c# advanced\\corerazorapp\\mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B617A546-F051-4489-AB95-24DB131D75C5}|MVC\\MVC.csproj|solutionrelative:mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{792F6F93-86FA-4100-875B-406DFAFE819F}|CoreRazorApp\\CoreRazorApp.csproj|c:\\users\\swain\\documents\\c# advanced\\corerazorapp\\corerazorapp\\models\\orgcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{792F6F93-86FA-4100-875B-406DFAFE819F}|CoreRazorApp\\CoreRazorApp.csproj|solutionrelative:corerazorapp\\models\\orgcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -183,71 +199,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "orgContext.cs",
-              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgContext.cs",
-              "RelativeDocumentMoniker": "CoreRazorApp\\Models\\orgContext.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgContext.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Models\\orgContext.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T06:12:45.703Z",
+              "Title": "Welcome.html",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\wwwroot\\Welcome.html",
+              "RelativeDocumentMoniker": "MVC\\wwwroot\\Welcome.html",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\wwwroot\\Welcome.html",
+              "RelativeToolTip": "MVC\\wwwroot\\Welcome.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-05T04:26:55.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Title": "MongoDBSettings.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Models\\MongoDBSettings.cs",
+              "RelativeDocumentMoniker": "MVC\\Models\\MongoDBSettings.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Models\\MongoDBSettings.cs",
+              "RelativeToolTip": "MVC\\Models\\MongoDBSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T09:46:47.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "orgClasses.cs",
-              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgClasses.cs",
-              "RelativeDocumentMoniker": "CoreRazorApp\\Models\\orgClasses.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgClasses.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Models\\orgClasses.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T06:10:47.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T09:39:16.55Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml",
-              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Create.cshtml",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Create.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-01T09:46:47.87Z",
-              "EditorCaption": ""
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Program.cs",
+              "RelativeDocumentMoniker": "MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Program.cs",
+              "RelativeToolTip": "MVC\\Program.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADwvzkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T09:13:41.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\appsettings.json",
+              "RelativeToolTip": "MVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-04T09:18:13.225Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Title": "orgContext.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgContext.cs",
+              "RelativeDocumentMoniker": "CoreRazorApp\\Models\\orgContext.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgContext.cs",
+              "RelativeToolTip": "CoreRazorApp\\Models\\orgContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T09:46:48.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T06:12:45.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T09:46:47.981Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "orgClasses.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgClasses.cs",
+              "RelativeDocumentMoniker": "CoreRazorApp\\Models\\orgClasses.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Models\\orgClasses.cs",
+              "RelativeToolTip": "CoreRazorApp\\Models\\orgClasses.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T06:10:47.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Create.cshtml",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T09:46:47.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T09:46:48.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Index.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Index.cshtml",
@@ -255,25 +315,23 @@
               "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-01T09:46:48.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs*",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Edit.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T09:46:48.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Details.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Details.cshtml",
@@ -281,51 +339,47 @@
               "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-01T09:46:48.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Details.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs*",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Details.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T09:46:48.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T09:46:48.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml*",
-              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml*",
+              "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Delete.cshtml",
+              "RelativeToolTip": "CoreRazorApp\\Pages\\Departments\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-01T09:46:48.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T09:46:48.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Program.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Program.cs",
@@ -337,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\appsettings.json",
               "RelativeDocumentMoniker": "CoreRazorApp\\appsettings.json",
@@ -349,19 +403,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Index.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Index.cshtml",
               "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Index.cshtml",
               "RelativeToolTip": "CoreRazorApp\\Pages\\Employees\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-01T09:40:48.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Edit.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Edit.cshtml",
@@ -373,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Details.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Details.cshtml",
@@ -385,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Delete.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Delete.cshtml",
@@ -397,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Create.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Create.cshtml",
@@ -409,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Departments\\Edit.cshtml",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Departments\\Edit.cshtml",
@@ -421,19 +475,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Index.cshtml.cs",
               "RelativeToolTip": "CoreRazorApp\\Pages\\Employees\\Index.cshtml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T09:40:48.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Delete.cshtml.cs",
@@ -445,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Details.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Details.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Details.cshtml.cs",
@@ -457,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Edit.cshtml.cs",
@@ -469,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Employees\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Employees\\Create.cshtml.cs",
@@ -481,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "20250801093016_first.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Migrations\\20250801093016_first.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Migrations\\20250801093016_first.cs",
@@ -493,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "20250731171130_patients.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Data\\Migrations\\20250731171130_patients.cs",
               "RelativeDocumentMoniker": "MVC\\Data\\Migrations\\20250731171130_patients.cs",
@@ -505,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "20250801050305_AddDoctorTable.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Data\\Migrations\\20250801050305_AddDoctorTable.cs",
               "RelativeDocumentMoniker": "MVC\\Data\\Migrations\\20250801050305_AddDoctorTable.cs",
@@ -517,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "DoctorsController.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Controllers\\DoctorsController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\DoctorsController.cs",
@@ -529,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MVC\\Data\\ApplicationDbContext.cs",
@@ -541,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Views\\Doctors\\Create.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Doctors\\Create.cshtml",
@@ -553,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Doctor.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Models\\Doctor.cs",
               "RelativeDocumentMoniker": "MVC\\Models\\Doctor.cs",
@@ -565,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Views\\Patients\\Delete.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Patients\\Delete.cshtml",
@@ -577,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "PatientsController.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Controllers\\PatientsController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\PatientsController.cs",
@@ -589,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Views\\Patients\\Edit.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Patients\\Edit.cshtml",
@@ -601,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Views\\Patients\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Patients\\Index.cshtml",
@@ -613,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Views\\Patients\\Create.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Patients\\Create.cshtml",
@@ -625,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Patient.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "MVC\\Models\\Patient.cs",
@@ -637,19 +691,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Publisher.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\ConsoleApp1\\Publisher.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Publisher.cs",
               "ToolTip": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\ConsoleApp1\\Publisher.cs",
               "RelativeToolTip": "ConsoleApp1\\Publisher.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T16:37:48.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
@@ -661,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\CoreRazorApp\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "CoreRazorApp\\Pages\\Index.cshtml.cs",
@@ -673,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
@@ -685,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "ThreadingExample.cs",
               "DocumentMoniker": "C:\\Users\\swain\\Documents\\C# Advanced\\CoreRazorApp\\ConsoleApp1\\ThreadingExample.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\ThreadingExample.cs",

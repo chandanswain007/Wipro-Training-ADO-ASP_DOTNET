@@ -270,3 +270,14 @@ C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\runtimes\
 C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\obj\Debug\net8.0\MVC.sourcelink.json
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\libman.json
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\DnsClient.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\MongoDB.EntityFrameworkCore.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\Snappier.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\swain\Documents\C# Advanced\CoreRazorApp\MVC\bin\Debug\net8.0\ZstdSharp.dll

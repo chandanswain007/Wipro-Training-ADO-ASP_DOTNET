@@ -1,0 +1,29 @@
+@page
+@model ItemsModel
+@{
+    ViewData["Title"] = "Items";
+}
+
+<h1>Item List</h1>
+
+<p>
+    <a asp-page="AddItem">Add a New Item</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ItemList)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

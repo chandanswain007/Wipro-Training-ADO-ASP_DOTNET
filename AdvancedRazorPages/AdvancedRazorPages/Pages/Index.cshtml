@@ -1,0 +1,16 @@
+﻿@page
+@model AdvancedRazorPages.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Product List</h1>
+
+<a asp-page="./Add">Add New Product</a>
+
+<div>
+    @foreach (var product in Model.ProductList)
+    {
+        <partial name="_ProductSummary" model="product" />
+    }
+</div>

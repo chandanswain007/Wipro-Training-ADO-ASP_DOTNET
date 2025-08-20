@@ -1,0 +1,37 @@
+﻿@model MVCPattern.Models.User
+@{
+    ViewData["Title"] = "User Form";
+}
+
+<h1>User Information</h1>
+
+<form asp-action="Submit" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="form-control" />
+    </div>
+
+    <h3>Address</h3>
+    <div class="form-group">
+        <label asp-for="UserAddress.Street"></label>
+        <input asp-for="UserAddress.Street" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="UserAddress.City"></label>
+        <input asp-for="UserAddress.City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="UserAddress.ZipCode"></label>
+        <input asp-for="UserAddress.ZipCode" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

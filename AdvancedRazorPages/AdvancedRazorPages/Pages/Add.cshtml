@@ -1,0 +1,30 @@
+﻿@page
+@model AdvancedRazorPages.Pages.Products.AddModel
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<h1>Add New Product</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Product.Name"></label>
+        <input asp-for="Product.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.Description"></label>
+        <input asp-for="Product.Description" class="form-control" />
+    </div>
+
+    <h3>Categories</h3>
+    <div class="form-group">
+        <label asp-for="Product.Categories[0].Name"></label>
+        <input asp-for="Product.Categories[0].Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Product.Categories[1].Name"></label>
+        <input asp-for="Product.Categories[1].Name" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Product</button>
+</form>

@@ -1,0 +1,41 @@
+﻿@page
+@model FeedbackFormModel
+@{
+    ViewData["Title"] = "Customer Feedback";
+}
+
+<h1>Customer Feedback Portal</h1>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label>Name</label>
+        @Html.StyledTextBoxFor(m => m.Feedback.Name, "Enter your full name")
+        <span asp-validation-for="Feedback.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        @Html.StyledTextBoxFor(m => m.Feedback.Name, "Enter your full name")
+        <span asp-validation-for="Feedback.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Rating</label>
+        @Html.DropDownListFor(m => m.Feedback.Rating,
+        new SelectList(Enumerable.Range(1, 5)),
+                "Select a Rating",
+                new { @class = "form-control" })
+        <span asp-validation-for="Feedback.Rating" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Comments</label>
+        @Html.TextAreaFor(m => m.Feedback.Comments, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+
+    <a asp-page="/SubmittedFeedback" class="btn btn-secondary">View Submissions</a>
+</form>

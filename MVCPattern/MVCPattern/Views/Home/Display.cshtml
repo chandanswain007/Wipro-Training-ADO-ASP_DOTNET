@@ -1,0 +1,14 @@
+﻿@model MVCPattern.Models.User
+@{
+    ViewData["Title"] = "Submitted Data";
+}
+
+<h1>Submitted User Details</h1>
+<p><strong>First Name:</strong> @Model.FirstName</p>
+<p><strong>Last Name:</strong> @Model.LastName</p>
+<p><strong>Age:</strong> @Model.Age</p>
+
+<h3>Address</h3>
+<p><strong>Street:</strong> @Model.UserAddress.Street</p>
+<p><strong>City:</strong> @Model.UserAddress.City</p>
+<p><strong>Zip Code:</strong> @Model.UserAddress.ZipCode</p>

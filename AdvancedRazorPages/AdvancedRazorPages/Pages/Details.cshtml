@@ -1,0 +1,27 @@
+﻿@page "{id:int}"
+@model AdvancedRazorPages.Pages.Products.DetailsModel
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+@if (Model.Product != null)
+{
+    <h1>@Model.Product.Name</h1>
+    <div>
+        <strong>Description:</strong>
+        <p>@Model.Product.Description</p>
+    </div>
+    <div>
+        <strong>Categories:</strong>
+        <ul>
+            @foreach (var category in Model.Product.Categories)
+            {
+                <li>@category.Name</li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>Product not found.</p>
+}

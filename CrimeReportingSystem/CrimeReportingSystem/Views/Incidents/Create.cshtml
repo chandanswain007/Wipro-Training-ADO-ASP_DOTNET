@@ -1,72 +1,309 @@
 ﻿@model CrimeReportingSystem.Models.ViewModels.IncidentCreateViewModel
+@using CrimeReportingSystem.Models.Entity
+@inject CrimeReportingSystem.Models.Data.ApplicationDbContext _context
 
 @{
     ViewData["Title"] = "Create Incident";
+    var victims = _context.Victims.ToList();
+    var suspects = _context.Suspects.ToList();
+    var agencies = _context.LawEnforcementAgencies.ToList();
 }
 
 <h2>Create New Incident</h2>
 
-<form asp-action="Create">
-    <div class="form-group">
-        <label asp-for="IncidentType" class="control-label"></label>
-        <input asp-for="IncidentType" class="form-control" />
-        <span asp-validation-for="IncidentType" class="text-danger"></span>
+<form asp-action="Create" id="incidentForm">
+    <!-- Incident Details Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            <h5>Incident Details</h5>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label asp-for="IncidentType" class="control-label"></label>
+                <select asp-for="IncidentType" class="form-control" required>
+                    <option value="">Select Incident Type</option>
+                    <option value="Robbery">Robbery</option>
+                    <option value="Homicide">Homicide</option>
+                    <option value="Theft">Theft</option>
+                    <option value="Assault">Assault</option>
+                    <option value="Burglary">Burglary</option>
+                </select>
+                <span asp-validation-for="IncidentType" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IncidentDate" class="control-label"></label>
+                <input asp-for="IncidentDate" class="form-control" type="datetime-local" required />
+                <span asp-validation-for="IncidentDate" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Latitude" class="control-label"></label>
+                        <input asp-for="Latitude" class="form-control" value="40.7128" required />
+                        <span asp-validation-for="Latitude" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Longitude" class="control-label"></label>
+                        <input asp-for="Longitude" class="form-control" value="-74.0060" required />
+                        <span asp-validation-for="Longitude" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control" required>
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                    <option value="Under Investigation">Under Investigation</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AgencyID" class="control-label">Law Enforcement Agency</label>
+                <select asp-for="AgencyID" class="form-control" required>
+                    <option value="">Select Agency</option>
+                    @foreach (var agency in agencies)
+                    {
+                        <option value="@agency.AgencyID">@agency.AgencyName</option>
+                    }
+                </select>
+                <span asp-validation-for="AgencyID" class="text-danger"></span>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label asp-for="IncidentDate" class="control-label"></label>
-        <input asp-for="IncidentDate" class="form-control" />
-        <span asp-validation-for="IncidentDate" class="text-danger"></span>
+    <!-- Victim Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-info text-white">
+            <h5>Victim Information</h5>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label asp-for="VictimID" class="control-label">Select Existing Victim</label>
+                <select asp-for="VictimID" class="form-control" id="existingVictimSelect">
+                    <option value="">Select Existing Victim</option>
+                    @foreach (var victim in victims)
+                    {
+                        <option value="@victim.VictimID">@victim.FirstName @victim.LastName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="CreateNewVictim" class="form-check-input" id="createNewVictim" />
+                <label class="form-check-label" for="createNewVictim">Create New Victim</label>
+            </div>
+
+            <div id="newVictimFields" style="display: none;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="NewVictimFirstName" class="control-label"></label>
+                            <input asp-for="NewVictimFirstName" class="form-control" />
+                            <span asp-validation-for="NewVictimFirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="NewVictimLastName" class="control-label"></label>
+                            <input asp-for="NewVictimLastName" class="form-control" />
+                            <span asp-validation-for="NewVictimLastName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewVictimDateOfBirth" class="control-label"></label>
+                    <input asp-for="NewVictimDateOfBirth" class="form-control" type="date" />
+                    <span asp-validation-for="NewVictimDateOfBirth" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewVictimGender" class="control-label"></label>
+                    <select asp-for="NewVictimGender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="NewVictimGender" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewVictimAddress" class="control-label"></label>
+                    <input asp-for="NewVictimAddress" class="form-control" />
+                    <span asp-validation-for="NewVictimAddress" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewVictimPhoneNumber" class="control-label"></label>
+                    <input asp-for="NewVictimPhoneNumber" class="form-control" />
+                    <span asp-validation-for="NewVictimPhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Latitude" class="control-label"></label>
-        <input asp-for="Latitude" class="form-control" />
-        <span asp-validation-for="Latitude" class="text-danger"></span>
+    <!-- Suspect Section -->
+    <div class="card mb-4">
+        <div class="card-header bg-warning text-dark">
+            <h5>Suspect Information</h5>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label asp-for="SuspectID" class="control-label">Select Existing Suspect</label>
+                <select asp-for="SuspectID" class="form-control" id="existingSuspectSelect">
+                    <option value="">Select Existing Suspect</option>
+                    @foreach (var suspect in suspects)
+                    {
+                        <option value="@suspect.SuspectID">@suspect.FirstName @suspect.LastName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="CreateNewSuspect" class="form-check-input" id="createNewSuspect" />
+                <label class="form-check-label" for="createNewSuspect">Create New Suspect</label>
+            </div>
+
+            <div id="newSuspectFields" style="display: none;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="NewSuspectFirstName" class="control-label"></label>
+                            <input asp-for="NewSuspectFirstName" class="form-control" />
+                            <span asp-validation-for="NewSuspectFirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="NewSuspectLastName" class="control-label"></label>
+                            <input asp-for="NewSuspectLastName" class="form-control" />
+                            <span asp-validation-for="NewSuspectLastName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewSuspectDateOfBirth" class="control-label"></label>
+                    <input asp-for="NewSuspectDateOfBirth" class="form-control" type="date" />
+                    <span asp-validation-for="NewSuspectDateOfBirth" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewSuspectGender" class="control-label"></label>
+                    <select asp-for="NewSuspectGender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="NewSuspectGender" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewSuspectAddress" class="control-label"></label>
+                    <input asp-for="NewSuspectAddress" class="form-control" />
+                    <span asp-validation-for="NewSuspectAddress" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NewSuspectPhoneNumber" class="control-label"></label>
+                    <input asp-for="NewSuspectPhoneNumber" class="form-control" />
+                    <span asp-validation-for="NewSuspectPhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Longitude" class="control-label"></label>
-        <input asp-for="Longitude" class="form-control" />
-        <span asp-validation-for="Longitude" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Description" class="control-label"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Status" class="control-label"></label>
-        <select asp-for="Status" class="form-control">
-            <option value="Open">Open</option>
-            <option value="Closed">Closed</option>
-            <option value="Under Investigation">Under Investigation</option>
-        </select>
-        <span asp-validation-for="Status" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="VictimID" class="control-label"></label>
-        <input asp-for="VictimID" class="form-control" />
-        <span asp-validation-for="VictimID" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="SuspectID" class="control-label"></label>
-        <input asp-for="SuspectID" class="form-control" />
-        <span asp-validation-for="SuspectID" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="AgencyID" class="control-label"></label>
-        <input asp-for="AgencyID" class="form-control" />
-        <span asp-validation-for="AgencyID" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
+    <div class="form-group mt-3">
+        <input type="submit" value="Create Incident" class="btn btn-primary" />
         <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </div>
 </form>
+
+@section Scripts {
+    <script>
+        // Toggle new victim fields
+        document.getElementById('createNewVictim').addEventListener('change', function() {
+            const newVictimFields = document.getElementById('newVictimFields');
+            const existingVictimSelect = document.getElementById('existingVictimSelect');
+
+            if (this.checked) {
+                newVictimFields.style.display = 'block';
+                existingVictimSelect.disabled = true;
+                existingVictimSelect.value = '';
+            } else {
+                newVictimFields.style.display = 'none';
+                existingVictimSelect.disabled = false;
+            }
+        });
+
+        // Toggle new suspect fields
+        document.getElementById('createNewSuspect').addEventListener('change', function() {
+            const newSuspectFields = document.getElementById('newSuspectFields');
+            const existingSuspectSelect = document.getElementById('existingSuspectSelect');
+
+            if (this.checked) {
+                newSuspectFields.style.display = 'block';
+                existingSuspectSelect.disabled = true;
+                existingSuspectSelect.value = '';
+            } else {
+                newSuspectFields.style.display = 'none';
+                existingSuspectSelect.disabled = false;
+            }
+        });
+
+        // Form validation
+        document.getElementById('incidentForm').addEventListener('submit', function(e) {
+            const createNewVictim = document.getElementById('createNewVictim').checked;
+            const createNewSuspect = document.getElementById('createNewSuspect').checked;
+
+            if (createNewVictim) {
+                const firstName = document.querySelector('[name="NewVictimFirstName"]').value;
+                const lastName = document.querySelector('[name="NewVictimLastName"]').value;
+
+                if (!firstName || !lastName) {
+                    e.preventDefault();
+                    alert('Please fill in at least first and last name for the new victim.');
+                    return false;
+                }
+            }
+
+            if (createNewSuspect) {
+                const firstName = document.querySelector('[name="NewSuspectFirstName"]').value;
+                const lastName = document.querySelector('[name="NewSuspectLastName"]').value;
+
+                if (!firstName || !lastName) {
+                    e.preventDefault();
+                    alert('Please fill in at least first and last name for the new suspect.');
+                    return false;
+                }
+            }
+
+            if (!createNewVictim && !document.getElementById('existingVictimSelect').value) {
+                e.preventDefault();
+                alert('Please select an existing victim or create a new one.');
+                return false;
+            }
+
+            if (!createNewSuspect && !document.getElementById('existingSuspectSelect').value) {
+                e.preventDefault();
+                alert('Please select an existing suspect or create a new one.');
+                return false;
+            }
+        });
+    </script>
+}

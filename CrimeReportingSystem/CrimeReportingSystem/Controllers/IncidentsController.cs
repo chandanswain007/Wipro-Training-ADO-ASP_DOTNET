@@ -1,20 +1,25 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using CrimeReportingSystem.Services;
-using CrimeReportingSystem.Models.ViewModels;
+﻿using CrimeReportingSystem.Exceptions;
+using CrimeReportingSystem.Models.Data;
 using CrimeReportingSystem.Models.Entity;
-using CrimeReportingSystem.Exceptions;
+using CrimeReportingSystem.Models.ViewModels;
+using CrimeReportingSystem.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CrimeReportingSystem.Controllers
 {
     public class IncidentsController : Controller
     {
         private readonly ICrimeAnalysisService _crimeAnalysisService;
+        private readonly ApplicationDbContext _context;
 
-        public IncidentsController(ICrimeAnalysisService crimeAnalysisService)
+        public IncidentsController(ICrimeAnalysisService crimeAnalysisService, ApplicationDbContext context)
         {
             _crimeAnalysisService = crimeAnalysisService;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -24,6 +29,9 @@ namespace CrimeReportingSystem.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.Victims = _context.Victims.ToList();
+            ViewBag.Suspects = _context.Suspects.ToList();
+            ViewBag.Agencies = _context.LawEnforcementAgencies.ToList();
             return View();
         }
 
@@ -33,27 +41,97 @@ namespace CrimeReportingSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                var incident = new Incident
+                try
                 {
-                    IncidentType = model.IncidentType,
-                    IncidentDate = model.IncidentDate,
-                    Latitude = model.Latitude,
-                    Longitude = model.Longitude,
-                    Description = model.Description,
-                    Status = model.Status,
-                    VictimID = model.VictimID,
-                    SuspectID = model.SuspectID,
-                    AgencyID = model.AgencyID
-                };
+                    int victimId = model.VictimID ?? 0;
+                    int suspectId = model.SuspectID ?? 0;
 
-                var result = await _crimeAnalysisService.CreateIncident(incident);
-                if (result)
-                {
-                    return RedirectToAction(nameof(Index));
+                    // Create new victim if requested
+                    if (model.CreateNewVictim && !string.IsNullOrEmpty(model.NewVictimFirstName))
+                    {
+                        var newVictim = new Victim
+                        {
+                            FirstName = model.NewVictimFirstName,
+                            LastName = model.NewVictimLastName,
+                            DateOfBirth = model.NewVictimDateOfBirth ?? DateTime.Now.AddYears(-30),
+                            Gender = model.NewVictimGender,
+                            Address = model.NewVictimAddress,
+                            PhoneNumber = model.NewVictimPhoneNumber
+                        };
+
+                        _context.Victims.Add(newVictim);
+                        await _context.SaveChangesAsync();
+                        victimId = newVictim.VictimID;
+                    }
+
+                    // Create new suspect if requested
+                    if (model.CreateNewSuspect && !string.IsNullOrEmpty(model.NewSuspectFirstName))
+                    {
+                        var newSuspect = new Suspect
+                        {
+                            FirstName = model.NewSuspectFirstName,
+                            LastName = model.NewSuspectLastName,
+                            DateOfBirth = model.NewSuspectDateOfBirth ?? DateTime.Now.AddYears(-30),
+                            Gender = model.NewSuspectGender,
+                            Address = model.NewSuspectAddress,
+                            PhoneNumber = model.NewSuspectPhoneNumber
+                        };
+
+                        _context.Suspects.Add(newSuspect);
+                        await _context.SaveChangesAsync();
+                        suspectId = newSuspect.SuspectID;
+                    }
+
+                    // Validate that we have valid IDs
+                    if (victimId == 0)
+                    {
+                        ModelState.AddModelError("", "Please select or create a victim");
+                        RepopulateViewBags();
+                        return View(model);
+                    }
+
+                    if (suspectId == 0)
+                    {
+                        ModelState.AddModelError("", "Please select or create a suspect");
+                        RepopulateViewBags();
+                        return View(model);
+                    }
+
+                    var incident = new Incident
+                    {
+                        IncidentType = model.IncidentType,
+                        IncidentDate = model.IncidentDate,
+                        Latitude = model.Latitude,
+                        Longitude = model.Longitude,
+                        Description = model.Description,
+                        Status = model.Status,
+                        VictimID = victimId,
+                        SuspectID = suspectId,
+                        AgencyID = model.AgencyID
+                    };
+
+                    var result = await _crimeAnalysisService.CreateIncident(incident);
+                    if (result)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                    ModelState.AddModelError("", "Failed to create incident");
                 }
-                ModelState.AddModelError("", "Failed to create incident");
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error creating incident: {ex.Message}");
+                }
             }
+
+            RepopulateViewBags();
             return View(model);
+        }
+
+        private void RepopulateViewBags()
+        {
+            ViewBag.Victims = _context.Victims.ToList();
+            ViewBag.Suspects = _context.Suspects.ToList();
+            ViewBag.Agencies = _context.LawEnforcementAgencies.ToList();
         }
 
         public IActionResult Edit(int id)
@@ -80,6 +158,10 @@ namespace CrimeReportingSystem.Controllers
                 catch (IncidentNumberNotFoundException ex)
                 {
                     ModelState.AddModelError("", ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error updating incident: {ex.Message}");
                 }
             }
             return View(model);
@@ -126,6 +208,10 @@ namespace CrimeReportingSystem.Controllers
             catch (IncidentNumberNotFoundException ex)
             {
                 return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error generating report: {ex.Message}");
             }
         }
     }

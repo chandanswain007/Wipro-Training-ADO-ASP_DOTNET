@@ -1,4 +1,23 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿// Function to toggle between existing and new victim/suspect
+function toggleFields(checkboxId, fieldsId, selectId) {
+    const checkbox = document.getElementById(checkboxId);
+    const fields = document.getElementById(fieldsId);
+    const select = document.getElementById(selectId);
 
-// Write your JavaScript code.
+    checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            fields.style.display = 'block';
+            select.disabled = true;
+            select.value = '';
+        } else {
+            fields.style.display = 'none';
+            select.disabled = false;
+        }
+    });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function () {
+    toggleFields('createNewVictim', 'newVictimFields', 'existingVictimSelect');
+    toggleFields('createNewSuspect', 'newSuspectFields', 'existingSuspectSelect');
+});

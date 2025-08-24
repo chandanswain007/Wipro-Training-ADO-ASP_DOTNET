@@ -1,0 +1,4 @@
+23-08-2025 21:04:04: User 'Anonymous' is attempting to access Home/Index.
+23-08-2025 21:04:09: User 'Anonymous' is attempting to access Home/Privacy.
+23-08-2025 21:04:11: User 'Anonymous' is attempting to access Home/Index.
+23-08-2025 21:04:51: User 'Anonymous' is attempting to access Account/Login.

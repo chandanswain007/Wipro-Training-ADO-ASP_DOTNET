@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CrimeReportingSystem.Models.Entity.Incident>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2>Search Results</h2>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var incident in Model)
+            {
+                <tr>
+                    <td>@incident.IncidentID</td>
+                    <td>@incident.IncidentType</td>
+                    <td>@incident.IncidentDate.ToShortDateString()</td>
+                    <td>@incident.Status</td>
+                    <td>
+                        <a href="@Url.Action("Details", new { id = incident.IncidentID })" class="btn btn-sm btn-info">Details</a>
+                        <a href="@Url.Action("Edit", new { id = incident.IncidentID })" class="btn btn-sm btn-warning">Update Status</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">
+        No incidents found matching your search criteria.
+    </div>
+}
+
+<a asp-action="Search" class="btn btn-secondary">New Search</a>
+<a asp-action="Index" class="btn btn-secondary">Back to Home</a>

@@ -1,0 +1,72 @@
+﻿@model CrimeReportingSystem.Models.ViewModels.IncidentCreateViewModel
+
+@{
+    ViewData["Title"] = "Create Incident";
+}
+
+<h2>Create New Incident</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="IncidentType" class="control-label"></label>
+        <input asp-for="IncidentType" class="form-control" />
+        <span asp-validation-for="IncidentType" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="IncidentDate" class="control-label"></label>
+        <input asp-for="IncidentDate" class="form-control" />
+        <span asp-validation-for="IncidentDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Latitude" class="control-label"></label>
+        <input asp-for="Latitude" class="form-control" />
+        <span asp-validation-for="Latitude" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Longitude" class="control-label"></label>
+        <input asp-for="Longitude" class="form-control" />
+        <span asp-validation-for="Longitude" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status" class="control-label"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="Open">Open</option>
+            <option value="Closed">Closed</option>
+            <option value="Under Investigation">Under Investigation</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="VictimID" class="control-label"></label>
+        <input asp-for="VictimID" class="form-control" />
+        <span asp-validation-for="VictimID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SuspectID" class="control-label"></label>
+        <input asp-for="SuspectID" class="form-control" />
+        <span asp-validation-for="SuspectID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AgencyID" class="control-label"></label>
+        <input asp-for="AgencyID" class="form-control" />
+        <span asp-validation-for="AgencyID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

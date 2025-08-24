@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Not Found";
+}
+
+<div class="container mt-5">
+    <div class="alert alert-danger">
+        <h2>@ViewBag.ErrorMessage</h2>
+    </div>
+    <a asp-controller="Incidents" asp-action="Index" class="btn btn-primary">Go to Home</a>
+</div>

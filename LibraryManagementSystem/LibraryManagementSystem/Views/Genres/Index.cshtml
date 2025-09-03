@@ -1,0 +1,101 @@
+﻿@model IEnumerable<LibraryManagementSystem.Models.Genre>
+
+@{
+    ViewData["Title"] = "Genres";
+}
+
+<h2>Genres</h2>
+
+<div class="mb-3">
+    <form id="addGenreForm">
+        <div class="input-group">
+            <input type="text" id="genreName" class="form-control" placeholder="New genre name" required>
+            <button type="submit" class="btn btn-primary">Add Genre</button>
+        </div>
+    </form>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="genreTableBody">
+        @foreach (var item in Model)
+        {
+            <tr id="genre-@item.Id">
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>
+                    <button class="btn btn-danger btn-sm" onclick="deleteGenre(@item.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // AJAX for Creating a Genre
+            $('#addGenreForm').on('submit', function (e) {
+                e.preventDefault(); // Prevent default form submission
+
+                const genreName = $('#genreName').val();
+
+                if (!genreName) {
+                    alert('Genre name cannot be empty.');
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("Create", "Genres")',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ name: genreName }),
+                    success: function (result) {
+                        if (result.success) {
+                            const newRow = `<tr id="genre-${result.genre.id}">
+                                                <td>${result.genre.id}</td>
+                                                <td>${result.genre.name}</td>
+                                                <td><button class="btn btn-danger btn-sm" onclick="deleteGenre(${result.genre.id})">Delete</button></td>
+                                            </tr>`;
+                            $('#genreTableBody').append(newRow);
+                            $('#genreName').val(''); // Clear the input
+                        } else {
+                            alert('Error: ' + result.errors.join(", "));
+                        }
+                    },
+                    error: function () {
+                        alert('An unexpected error occurred.');
+                    }
+                });
+            });
+        });
+
+        // AJAX for Deleting a Genre
+        function deleteGenre(id) {
+            if (!confirm('Are you sure you want to delete this genre?')) {
+                return;
+            }
+
+            $.ajax({
+                url: '@Url.Action("Delete", "Genres")/' + id,
+                type: 'POST',
+                success: function (result) {
+                    if (result.success) {
+                        $('#genre-' + id).remove(); // Remove the row from the table
+                    } else {
+                        alert('Error: ' + result.message);
+                    }
+                },
+                error: function () {
+                    alert('An unexpected error occurred while deleting.');
+                }
+            });
+        }
+    </script>
+}

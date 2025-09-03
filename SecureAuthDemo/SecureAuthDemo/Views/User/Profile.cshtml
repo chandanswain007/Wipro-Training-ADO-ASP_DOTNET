@@ -1,0 +1,6 @@
+﻿<h2>User Profile</h2>
+<p>@ViewBag.Message</p>
+<div>
+    <p>Username: @User.Identity.Name</p>
+    <p>Email: @User.Claims.FirstOrDefault(c => c.Type == "email")?.Value</p>
+</div>
